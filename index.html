@@ -10,10 +10,6 @@
       0% { opacity: 0; transform: scale(0.8); }
       100% { opacity: 1; transform: scale(1); }
     }
-    @keyframes slideUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
     @keyframes shimmer {
       0% { background-position: -500px 0; }
       100% { background-position: 500px 0; }
@@ -36,26 +32,15 @@
     }
 
     .hero-logo {
-      max-width: 300px;
+      max-width: 900px;
       width: 100%;
       height: auto;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
       animation: fadeZoom 1.5s ease-out;
     }
     h1 {
       font-size: 2.5em;
-      margin-bottom: 0.2em;
-      animation: slideUp 1s ease-out forwards;
-      animation-delay: 0.5s;
-      opacity: 0;
-    }
-    p {
-      font-size: 1.2em;
-      color: #aaa;
       margin-bottom: 2em;
-      animation: slideUp 1s ease-out forwards;
-      animation-delay: 0.7s;
-      opacity: 0;
     }
     .button-logos {
       display: flex;
@@ -88,9 +73,8 @@
 <body>
   <img src="nexmod.png" alt="NexMod Logo" class="hero-logo" />
   <h1>Build What’s Next.</h1>
-  <p>Prototype the Possible · Ideas Engineered · Function Fabricated</p>
   <div class="button-logos">
-    <a href="#"><img src="protoforma.png" alt="ProtoForma Logo" /></a>
+    <a href="/protoforma/index.html"><img src="protoforma.png" alt="ProtoForma Logo" /></a>
     <a href="#"><img src="los.png" alt="Line of Sight Logo" /></a>
   </div>
   <footer>
