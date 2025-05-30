@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NexMod — Build What’s Next</title>
   <style>
+    @keyframes fadeZoom {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -500px 0; }
+      100% { background-position: 500px 0; }
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,21 +30,32 @@
       justify-content: center;
       text-align: center;
       padding: 2em;
+      background-image: linear-gradient(120deg, #1c1c1c 25%, #2c2c2c 50%, #1c1c1c 75%);
+      background-size: 1000px 100%;
+      animation: shimmer 6s infinite linear;
     }
+
     .hero-logo {
       max-width: 300px;
       width: 100%;
       height: auto;
       margin-bottom: 1em;
+      animation: fadeZoom 1.5s ease-out;
     }
     h1 {
       font-size: 2.5em;
       margin-bottom: 0.2em;
+      animation: slideUp 1s ease-out forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
     }
     p {
       font-size: 1.2em;
-      color: #888;
+      color: #aaa;
       margin-bottom: 2em;
+      animation: slideUp 1s ease-out forwards;
+      animation-delay: 0.7s;
+      opacity: 0;
     }
     .button-logos {
       display: flex;
@@ -48,10 +72,11 @@
       background: #fff;
       border-radius: 10px;
       padding: 0.75em;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .button-logos img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 15px #0077ff;
     }
     footer {
       margin-top: 3em;
