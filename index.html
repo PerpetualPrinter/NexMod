@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NexMod — Build What’s Next</title>
   <style>
     body {
@@ -15,8 +15,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       text-align: center;
+      padding: 2em;
     }
     h1 {
       font-size: 3em;
@@ -26,6 +26,20 @@
       font-size: 1.2em;
       color: #888;
       margin-bottom: 2em;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+    }
+    .logos img {
+      max-height: 100px;
+      width: auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 0.5em;
     }
     a.button {
       display: inline-block;
@@ -45,6 +59,11 @@
   </style>
 </head>
 <body>
+  <div class="logos">
+    <img src="nexmod.png" alt="NexMod Logo" />
+    <img src="protoforma.png" alt="ProtoForma Logo" />
+    <img src="los.png" alt="Line of Sight Logo" />
+  </div>
   <h1>Build What’s Next.</h1>
   <p>Prototype the Possible · Ideas Engineered · Function Fabricated</p>
   <a href="#" class="button">ProtoForma</a>
