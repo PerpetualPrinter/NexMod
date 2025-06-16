@@ -19,6 +19,39 @@
       font-size: 2rem;
       color: #00ffff;
     }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .card {
+      background: #1b1b1b;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px #0077ff55;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: #00ffff;
+    }
+    .card ul {
+      padding-left: 1.2rem;
+    }
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffcc00;
+    }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -51,8 +84,26 @@
 <body>
   <header>
     <h1>🔥 Most Popular Displays</h1>
-    <p>Our best-selling designs, as shown in action.</p>
-  </header>  <section class="gallery">
+    <p>Our best-selling designs loved by customers worldwide.</p>
+  </header>  <section class="products">
+    <div class="card">
+      <h2>Desk Sign (~170×100mm)</h2>
+      <ul>
+        <li>Available Colors: Black, White</li>
+        <li>Material: 4mm Acrylic</li>
+        <li>Power: Battery or Wired</li>
+      </ul>
+      <div class="price">$35 (Battery) / $30 (No Battery)</div>
+    </div><div class="card">
+  <h2>50×50cm Frame (~19.5×19.5in)</h2>
+  <ul>
+    <li>Colors: White, D Wood, M Wood, L Wood</li>
+    <li>LED Options: 2 Row x2 or 1 Row</li>
+  </ul>
+  <div class="price">$225 (2 Row) / $200 (1 Row) / $170 (No LED)</div>
+</div>
+
+  </section>  <section class="gallery">
     <img src="Popular_Gallery1.jpg" alt="Popular Display 1">
     <img src="Popular_Gallery2.jpg" alt="Popular Display 2">
     <img src="Popular_Gallery3.jpg" alt="Popular Display 3">
