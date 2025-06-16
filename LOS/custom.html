@@ -34,6 +34,21 @@
     p, ul {
       line-height: 1.6;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #ffaa0044;
+      transition: transform 0.2s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
     .nav {
       margin-top: 3rem;
       text-align: center;
@@ -65,6 +80,18 @@
     </ul>
 
     <p>Custom sizing, LED configurations, and acrylic options are all available. We can also work from your vector art or help you design from scratch.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="Custom_Gallery1.jpg" alt="Custom Display 1">
+      <img src="Custom_Gallery2.jpg" alt="Custom Display 2">
+      <img src="Custom_Gallery3.jpg" alt="Custom Display 3">
+      <img src="Custom_Gallery4.jpg" alt="Custom Display 4">
+      <img src="Custom_Gallery5.jpg" alt="Custom Display 5">
+      <img src="Custom_Gallery6.jpg" alt="Custom Display 6">
+      <img src="Custom_Gallery7.jpg" alt="Custom Display 7">
+      <img src="Custom_Gallery8.jpg" alt="Custom Display 8">
+    </div>
 
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:nexmod.los@gmail.com" style="color: #ffaa00;">nexmod.los@gmail.com</a></p>
