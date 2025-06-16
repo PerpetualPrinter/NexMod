@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOS — Great Deals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #00ff99;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1b1b1b;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px #00ff9955;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: #00ff99;
+    }
+    .card ul {
+      padding-left: 1.2rem;
+    }
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffcc00;
+    }
+    .nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .nav a {
+      color: #00ff99;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💸 Great Deals — Small Frames</h1>
+    <p>Affordable options with great style.</p>
+  </header>
+
+  <section class="products">
+    <div class="card">
+      <h2>21×30cm (~8.25×11.75in)</h2>
+      <ul>
+        <li>Colors: Black, White</li>
+        <li>LED: 2 Row x2 or 1 Row</li>
+      </ul>
+      <div class="price">$110 (2 Row) / $100 (1 Row) / $70 (No LED)</div>
+    </div>
+
+    <div class="card">
+      <h2>25×25cm (~9.75×9.75in)</h2>
+      <ul>
+        <li>Colors: Black, White, D/M/L Wood</li>
+        <li>LED: 2 Row x2 or 1 Row</li>
+      </ul>
+      <div class="price">$110 (2 Row) / $100 (1 Row) / $70 (No LED)</div>
+    </div>
+  </section>
+
+  <div class="nav">
+    <a href="popular.html">⬅ Back to Popular</a>
+    <a href="medium.html">Next: Medium Frames 📏</a>
+  </div>
+</body>
+</html>
