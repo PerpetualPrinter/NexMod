@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOS — Medium Frames</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #3399ff;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1b1b1b;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px #3399ff55;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: #3399ff;
+    }
+    .card ul {
+      padding-left: 1.2rem;
+    }
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffcc00;
+    }
+    .nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .nav a {
+      color: #3399ff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📏 Medium Frames</h1>
+    <p>Perfect balance of size, clarity, and presence.</p>
+  </header>
+
+  <section class="products">
+    <div class="card">
+      <h2>30×40cm (~11.75×15.75in)</h2>
+      <ul>
+        <li>Available in all colors/woods</li>
+        <li>LED Options: 2 Row x2 or 1 Row</li>
+      </ul>
+      <div class="price">$175 (2 Row) / $150 (1 Row) / $120 (No LED)</div>
+    </div>
+
+    <div class="card">
+      <h2>35×35cm (~13.75×13.75in)</h2>
+      <ul>
+        <li>Available in all colors/woods</li>
+        <li>LED Options: 2 Row x2 or 1 Row</li>
+      </ul>
+      <div class="price">$175 (2 Row) / $150 (1 Row) / $120 (No LED)</div>
+    </div>
+  </section>
+
+  <div class="nav">
+    <a href="deals.html">⬅ Back to Deals</a>
+    <a href="xl.html">Next: XL Displays 📐</a>
+  </div>
+</body>
+</html>
