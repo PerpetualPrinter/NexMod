@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOS — Popular Displays</title>
   <style>
     body {
@@ -20,37 +20,19 @@
       font-size: 2rem;
       color: #00ffff;
     }
-    .products {
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
     }
-    .card {
-      background: #1b1b1b;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px #0077ff55;
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #00ffff44;
       transition: transform 0.2s ease;
     }
-    .card:hover {
-      transform: scale(1.02);
-    }
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.25rem;
-      color: #00ffff;
-    }
-    .card ul {
-      padding-left: 1.2rem;
-    }
-    .card ul li {
-      margin-bottom: 0.5rem;
-    }
-    .price {
-      margin-top: 1rem;
-      font-weight: bold;
-      font-size: 1.1rem;
-      color: #ffcc00;
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.03);
     }
     .nav {
       margin-top: 3rem;
@@ -70,28 +52,28 @@
 <body>
   <header>
     <h1>🔥 Most Popular Displays</h1>
-    <p>Our best-selling designs loved by customers worldwide.</p>
+    <p>Our best-selling designs, as shown in action.</p>
   </header>
 
-  <section class="products">
-    <div class="card">
-      <h2>Desk Sign (~170×100mm)</h2>
-      <ul>
-        <li>Available Colors: Black, White</li>
-        <li>Material: 4mm Acrylic</li>
-        <li>Power: Battery or Wired</li>
-      </ul>
-      <div class="price">$35 (Battery) / $30 (No Battery)</div>
-    </div>
-
-    <div class="card">
-      <h2>50×50cm Frame (~19.5×19.5in)</h2>
-      <ul>
-        <li>Colors: White, D Wood, M Wood, L Wood</li>
-        <li>LED Options: 2 Row x2 or 1 Row</li>
-      </ul>
-      <div class="price">$225 (2 Row) / $200 (1 Row) / $170 (No LED)</div>
-    </div>
+  <section class="gallery">
+    <img src="Popular_Gallery1.jpg" alt="Popular Display 1">
+    <img src="Popular_Gallery2.jpg" alt="Popular Display 2">
+    <img src="Popular_Gallery3.jpg" alt="Popular Display 3">
+    <img src="Popular_Gallery4.jpg" alt="Popular Display 4">
+    <img src="Popular_Gallery5.jpg" alt="Popular Display 5">
+    <img src="Popular_Gallery6.jpg" alt="Popular Display 6">
+    <img src="Popular_Gallery7.jpg" alt="Popular Display 7">
+    <img src="Popular_Gallery8.jpg" alt="Popular Display 8">
+    <img src="Popular_Gallery9.jpg" alt="Popular Display 9">
+    <img src="Popular_Gallery10.jpg" alt="Popular Display 10">
+    <img src="Popular_Gallery11.jpg" alt="Popular Display 11">
+    <img src="Popular_Gallery12.jpg" alt="Popular Display 12">
+    <img src="Popular_Gallery13.jpg" alt="Popular Display 13">
+    <video controls>
+      <source src="Popular_Gallery14.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="Popular_Gallery15.jpg" alt="Popular Display 15">
   </section>
 
   <div class="nav">
